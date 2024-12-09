@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 async function connectDb() {
   try {
@@ -9,7 +9,7 @@ async function connectDb() {
     // console.log(connectionObj);
     // console.log(`database is connected: ${connectionObj.connection.host}`);
   } catch (err) {
-    console.error("error while connection with database: ", err);
+    console.error('error while connection with database: ', err);
     throw err;
   }
 }
